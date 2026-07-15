@@ -4,7 +4,8 @@
       <h2>Shraddha Mishra</h2>
       <p class="hero-copy">
         Machine learning systems researcher building reproducible infrastructure,
-        experimental frameworks, and dependable technical systems.
+        experimental frameworks,<br> 
+        and dependable technical systems.
       </p>
       <div class="signal-grid">
         <article><span>Focus</span><strong>ML Systems</strong></article>
@@ -480,7 +481,7 @@
 
       </div>
     </section>
-  `},a={updatedAt:`2026-07-11T05:27:52+00:00`,scholarUrl:`https://scholar.google.com/citations?user=O5pkUdUAAAAJ&hl=en`,scholarUserId:`O5pkUdUAAAAJ`,name:`Shraddha Mishra`,totalCitations:29,hIndex:2,i10Index:1,citesPerYear:{2023:2,2024:4,2025:14,2026:9},publications:[{title:`QSurfNet: a hybrid quantum convolutional neural network for surface defect recognition: S. Mishra, C.-Y. Tsai`,year:2023,citations:23,url:`https://link.springer.com/article/10.1007/s11128-023-03930-5`},{title:`Design of superior parameterized quantum circuits for quantum image classification`,year:2022,citations:6,url:`https://ieeexplore.ieee.org/abstract/document/9762420/`},{title:`QSurfNet: 用於表面缺陷識別的混合量子卷積神經網絡.`,year:2022,citations:0,url:`https://www.airitilibrary.com/Article/Detail/U0002-0308202215525000`}]};function o(e){return String(e).replaceAll(`&`,`&amp;`).replaceAll(`<`,`&lt;`).replaceAll(`>`,`&gt;`).replaceAll(`"`,`&quot;`).replaceAll(`'`,`&#039;`)}function s(e){let t=o(e.title),n=e.year||`Year unavailable`,r=e.citations??0,i=e.url?.trim(),a=i?`
+  `},a={displayName:`Shraddha Mishra`,scholarUrl:`https://scholar.google.com/citations?user=O5pkUdUAAAAJ&hl=en`,totalCitations:29,hIndex:2,i10Index:1,generatedAt:`2026-07-13T13:10:01.503670+00:00`,publications:[{title:`QSurfNet: a hybrid quantum convolutional neural network for surface defect recognition: S. Mishra, C.-Y. Tsai`,year:`2023`,citations:23,url:`https://scholar.google.com/citations?view_op=view_citation&hl=en&user=O5pkUdUAAAAJ&citation_for_view=O5pkUdUAAAAJ%3A9yKSN-GCB0IC`},{title:`Design of superior parameterized quantum circuits for quantum image classification`,year:`2022`,citations:6,url:`https://scholar.google.com/citations?view_op=view_citation&hl=en&user=O5pkUdUAAAAJ&citation_for_view=O5pkUdUAAAAJ%3Ad1gkVwhDpl0C`},{title:`QSurfNet: 用於表面缺陷識別的混合量子卷積神經網絡.`,year:`2022`,citations:0,url:`https://scholar.google.com/citations?view_op=view_citation&hl=en&user=O5pkUdUAAAAJ&citation_for_view=O5pkUdUAAAAJ%3AqjMakFHDy7sC`}]};function o(e){return String(e).replaceAll(`&`,`&amp;`).replaceAll(`<`,`&lt;`).replaceAll(`>`,`&gt;`).replaceAll(`"`,`&quot;`).replaceAll(`'`,`&#039;`)}function s(e){let t=o(e.title),n=e.year||`Year unavailable`,r=e.citations??0,i=e.url?.trim(),a=i?`
       <a
         href="${o(i)}"
         target="_blank"
