@@ -1,0 +1,36 @@
+# Shraddha Mishra
+
+> Machine-learning systems researcher building reproducible infrastructure, experimental frameworks, and dependable technical systems.
+
+My work has progressed steadily from building AI models to building dependable systems around them, and from one field to the next. I have repeatedly taken on roles in fields where I had no prior background, including quantum machine learning, receipt recognition, production NLP backends and cryptographic side-channel analysis, and delivered working, documented results in each.
+
+I intend to investigate autonomous, risk-aware decision-making among adaptive and adversarial agents under regime shift, and to engineer systems that remain reliable on difficult, assumption-violating data. Financial markets are my intended testbed, because they demand robustness, adaptive reasoning, and disciplined execution under risk.
+
+## Links
+
+- [Full CV, plain text](https://itsshraddhamishra.github.io/cv.html): every section of the CV on one page
+- [Interactive CV](https://itsshraddhamishra.github.io/): the same CV in eight languages
+- [Google Scholar](https://scholar.google.com/citations?user=O5pkUdUAAAAJ&hl=en)
+- [GitHub](https://github.com/ItsShraddhaMishra)
+- [LinkedIn](https://www.linkedin.com/in/shraddha-mishra-b25728186/)
+
+## Experience
+
+- Research Assistant, Academia Sinica, Taiwan (Deep Learning for Hardware Security · DL-SCA)
+- Natural Language Processing Engineer, Aiello Inc., Taiwan (MLOps · Backend Engineering)
+- Research Assistant, Tamkang University, Taiwan (Quantum Machine Learning · Computer Vision)
+- Deep Learning Engineer, Statement Cloud Digital Technology Co., Ltd., Taiwan (Computer Vision · Backend Engineering)
+
+## Education
+
+- Master of Engineering, Artificial Intelligence & Internet of Things, Tamkang University · Taiwan
+- Bachelor of Engineering, Electrical & Electronics Engineering, Bhilai Institute of Technology · India
+- Senior Secondary Education, Central Board of Secondary Education, Allahabad Public School · Prayagraj, India
+
+## Fields explored
+
+- Computer Vision
+- Quantum Machine Learning
+- Software Development & MLOps
+- Deep Learning for Hardware Security
+- Next: Machine Learning in Finance

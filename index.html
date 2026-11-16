@@ -27,6 +27,14 @@
     href="https://itsshraddhamishra.github.io/"
   >
 
+  <!-- Plain, JavaScript-free copy of the whole CV (generated at build time). -->
+  <link
+    rel="alternate"
+    type="text/html"
+    href="https://itsshraddhamishra.github.io/cv.html"
+    title="Shraddha Mishra — CV (plain text)"
+  >
+
   <!-- Favicon -->
   <link
     rel="icon"
@@ -131,12 +139,18 @@
       "familyName": "Mishra",
       "url": "https://itsshraddhamishra.github.io/",
       "email": "mailto:its.shraddha.mishra@gmail.com",
-      "jobTitle": "Research Assistant and ML Systems Researcher",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Institute of Information Science, Academia Sinica"
+      "jobTitle": "Machine Learning Systems Researcher",
+      "description": "Machine-learning systems researcher. Former Research Assistant at the Institute of Information Science, Academia Sinica (2023-2026), working on reproducible deep-learning side-channel analysis. Master of Engineering, Tamkang University. Research axis: autonomous, risk-aware decision-making among adaptive and adversarial agents under regime shift, with financial markets as testbed.",
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Taiwan"
       },
       "alumniOf": [
+        {
+          "@type": "ResearchOrganization",
+          "name": "Institute of Information Science, Academia Sinica",
+          "url": "https://www.iis.sinica.edu.tw/"
+        },
         {
           "@type": "CollegeOrUniversity",
           "name": "Tamkang University"
@@ -146,6 +160,11 @@
           "name": "Bhilai Institute of Technology"
         }
       ],
+      "subjectOf": {
+        "@type": "WebPage",
+        "name": "Shraddha Mishra — CV (plain text)",
+        "url": "https://itsshraddhamishra.github.io/cv.html"
+      },
       "sameAs": [
         "https://github.com/ItsShraddhaMishra",
         "https://www.linkedin.com/in/shraddha-mishra-b25728186/",
@@ -160,7 +179,10 @@
         "Computer Vision",
         "Quantum Machine Learning",
         "Research Automation",
-        "Autonomous Decision-Making"
+        "Autonomous Decision-Making",
+        "Risk-Aware Decision-Making",
+        "Multi-Agent Reinforcement Learning",
+        "Machine Learning in Finance"
       ]
     }
   }
@@ -324,7 +346,19 @@
       </svg>
     </button>
 
-    <main id="main-view" class="main-view" tabindex="-1" aria-live="polite"></main>
+    <main id="main-view" class="main-view" tabindex="-1" aria-live="polite">
+      <!-- Replaced by the interactive CV once JavaScript runs. -->
+      <noscript>
+        <section class="content-panel">
+          <h2>Shraddha Mishra</h2>
+          <p>
+            Machine-learning systems researcher building reproducible infrastructure,
+            experimental frameworks, and dependable technical systems.
+          </p>
+          <p><a href="/cv.html">Read the full CV (plain text version)</a></p>
+        </section>
+      </noscript>
+    </main>
   </div>
 
   <!-- Cloudflare Web Analytics -->
