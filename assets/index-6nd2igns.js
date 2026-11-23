@@ -9,7 +9,7 @@
         <article><span>${t(e.locationLabel)}</span><strong>${t(e.locationValue)}</strong></article>
       </div>
     </section>
-  `},o=[{text:0,carried:!0,from:`2023`,to:`2026`,fields:[3],supervisor:{name:`Prof. Dr. Ruben Niederhagen`,url:`https://scholar.google.com/citations?user=mPNOzDAAAAAJ&hl=en`}},{text:1,from:`2023`,isBreak:!0,fields:[]},{text:2,from:`2022`,to:`2023`,fields:[2]},{text:4,from:`2022`,fields:[2]},{text:3,carried:!0,from:`2019`,to:`2022`,fields:[1,0],supervisor:{name:`Prof. Dr. Chi-Yi Tsai`,url:`https://scholar.google.com/citations?user=WbEw0RQAAAAJ&hl=en`}}];function s(e,t){return e.to===null?`${e.from} – ${t}`:e.to?`${e.from} – ${e.to}`:e.from}function c(e,n){if(!n||!e.length)return r(e);let i=e[e.length-1].match(/^([^:：]{1,40}[:：])\s*(.*)$/s);return i?`${r(e.slice(0,-1))}
+  `},o=[{text:0,carried:!0,from:`2023`,to:`2026`,fields:[3,2],supervisor:{name:`Prof. Dr. Ruben Niederhagen`,url:`https://scholar.google.com/citations?user=mPNOzDAAAAAJ&hl=en`}},{text:1,from:`2023`,isBreak:!0,fields:[]},{text:2,from:`2022`,to:`2023`,fields:[2]},{text:4,from:`2022`,fields:[0,2]},{text:3,carried:!0,from:`2019`,to:`2022`,fields:[1,0],supervisor:{name:`Prof. Dr. Chi-Yi Tsai`,url:`https://scholar.google.com/citations?user=WbEw0RQAAAAJ&hl=en`}}];function s(e,t){return e.to===null?`${e.from} – ${t}`:e.to?`${e.from} – ${e.to}`:e.from}function c(e,n){if(!n||!e.length)return r(e);let i=e[e.length-1].match(/^([^:：]{1,40}[:：])\s*(.*)$/s);return i?`${r(e.slice(0,-1))}
             <p class="career-carried"><span class="career-carried-label">${t(i[1])}</span> ${t(i[2])}</p>`:r(e)}function l(e,n){return`
             <p class="career-meta">
               <span class="career-meta-label">${t(n)}:</span>
@@ -40,6 +40,10 @@
       </header>
 
       <div class="career-timeline">
+        <div class="field-strip" data-label="${t(e.fieldsLabel)}" aria-hidden="true">
+          ${e.fields.map((e,n)=>`
+          <span data-field="${n}">${t(e)}</span>`).join(``)}
+        </div>
         ${o.map(i=>{let a=e.entries[i.text];return`
         <article
           class="career-entry${i.isBreak?` career-break`:``}"
@@ -79,7 +83,7 @@
         </article>`}).join(``)}
       </div>
     </section>
-  `,mount(e){d==null||d.disconnect();let t=[...e.querySelectorAll(`.field-chip[data-field]`)],n=[...e.querySelectorAll(`.career-entry`)];if(!t.length||!n.length)return;let r=null,i=null,a=()=>{var e,n;let a=(e=i)==null?r:e,o=new Set(((n=a==null?void 0:a.dataset.fields)==null?``:n).split(` `).filter(Boolean));for(let e of t)e.classList.toggle(`is-active`,o.has(e.dataset.field))};for(let e of n)e.addEventListener(`mouseenter`,()=>{i=e,a()}),e.addEventListener(`mouseleave`,()=>{i===e&&(i=null),a()});d=new IntersectionObserver(e=>{for(let t of e)t.isIntersecting&&(r=t.target);a()},{rootMargin:`-45% 0px -45% 0px`});for(let e of n)d.observe(e)}},d=null,f=`https://scholar.google.com/citations?user=O5pkUdUAAAAJ&hl=en`,p=[{years:`2019 – 2022`,thesis:`QSurfNet: A Hybrid Quantum Convolutional Neural Network for Surface Defect Recognition`,scholarChip:!0,supervisor:{name:`Prof. Dr. Chi-Yi Tsai`,url:`https://scholar.google.com/citations?user=WbEw0RQAAAAJ&hl=en`}},{years:`2014 – 2018`,thesis:`Transfer Learning Implementation in Image Classification with Machine Learning`,supervisor:{name:`Prof. Dr. Mukesh Kumar Chandrakar`,url:`https://scholar.google.com/citations?user=r7OcorcAAAAJ&hl=en`}},{years:`2012 – 2013`,isSchool:!0}];function m(e,n){let r=e.url?`<a href="${e.url}" target="_blank" rel="noopener noreferrer" dir="ltr">${t(e.name)}</a>`:`<span dir="ltr">${t(e.name)}</span>`;return`
+  `,mount(e){d==null||d.disconnect();let t=[...e.querySelectorAll(`[data-field]`)],n=[...e.querySelectorAll(`.career-entry`)];if(!t.length||!n.length)return;let r=null,i=null,a=()=>{var e,n;let a=(e=i)==null?r:e,o=new Set(((n=a==null?void 0:a.dataset.fields)==null?``:n).split(` `).filter(Boolean));for(let e of t)e.classList.toggle(`is-active`,o.has(e.dataset.field))};for(let e of n)e.addEventListener(`pointerenter`,t=>{t.pointerType===`mouse`&&(i=e,a())}),e.addEventListener(`pointerleave`,t=>{t.pointerType===`mouse`&&(i===e&&(i=null),a())}),e.addEventListener(`pointerdown`,t=>{t.pointerType!==`mouse`&&(r=e,a())});d=new IntersectionObserver(e=>{for(let t of e)t.isIntersecting&&(r=t.target);a()},{rootMargin:`-45% 0px -45% 0px`});for(let e of n)d.observe(e)}},d=null,f=`https://scholar.google.com/citations?user=O5pkUdUAAAAJ&hl=en`,p=[{years:`2019 – 2022`,thesis:`QSurfNet: A Hybrid Quantum Convolutional Neural Network for Surface Defect Recognition`,scholarChip:!0,supervisor:{name:`Prof. Dr. Chi-Yi Tsai`,url:`https://scholar.google.com/citations?user=WbEw0RQAAAAJ&hl=en`}},{years:`2014 – 2018`,thesis:`Transfer Learning Implementation in Image Classification with Machine Learning`,supervisor:{name:`Prof. Dr. Mukesh Kumar Chandrakar`,url:`https://scholar.google.com/citations?user=r7OcorcAAAAJ&hl=en`}},{years:`2012 – 2013`,isSchool:!0}];function m(e,n){let r=e.url?`<a href="${e.url}" target="_blank" rel="noopener noreferrer" dir="ltr">${t(e.name)}</a>`:`<span dir="ltr">${t(e.name)}</span>`;return`
             <p class="education-meta">
               <span class="career-meta-label">${t(n)}:</span>
               ${r}
@@ -204,7 +208,7 @@
         </article>`}).join(``)}
       </div>
     </section>
-  `},y={displayName:`Shraddha Mishra`,scholarUrl:`https://scholar.google.com/citations?user=O5pkUdUAAAAJ&hl=en`,totalCitations:31,hIndex:2,i10Index:1,generatedAt:`2026-11-23T12:23:39.295903+00:00`,publications:[{title:`QSurfNet: a hybrid quantum convolutional neural network for surface defect recognition: S. Mishra, C.-Y. Tsai`,year:`2023`,citations:25,url:`https://scholar.google.com/citations?view_op=view_citation&hl=en&user=O5pkUdUAAAAJ&citation_for_view=O5pkUdUAAAAJ%3A9yKSN-GCB0IC`},{title:`Design of superior parameterized quantum circuits for quantum image classification`,year:`2022`,citations:6,url:`https://scholar.google.com/citations?view_op=view_citation&hl=en&user=O5pkUdUAAAAJ&citation_for_view=O5pkUdUAAAAJ%3Ad1gkVwhDpl0C`},{title:`QSurfNet: 用於表面缺陷識別的混合量子卷積神經網絡.`,year:`2022`,citations:0,url:`https://scholar.google.com/citations?view_op=view_citation&hl=en&user=O5pkUdUAAAAJ&citation_for_view=O5pkUdUAAAAJ%3AqjMakFHDy7sC`}]};function b(e,n){var r,i;let a=t(e.title),o=e.year||n.yearUnavailable,s=(r=e.citations)==null?0:r,c=(i=e.url)==null?void 0:i.trim(),l=c?`
+  `},y={displayName:`Shraddha Mishra`,scholarUrl:`https://scholar.google.com/citations?user=O5pkUdUAAAAJ&hl=en`,totalCitations:31,hIndex:2,i10Index:1,generatedAt:`2026-11-23T16:19:41.874482+00:00`,publications:[{title:`QSurfNet: a hybrid quantum convolutional neural network for surface defect recognition: S. Mishra, C.-Y. Tsai`,year:`2023`,citations:25,url:`https://scholar.google.com/citations?view_op=view_citation&hl=en&user=O5pkUdUAAAAJ&citation_for_view=O5pkUdUAAAAJ%3A9yKSN-GCB0IC`},{title:`Design of superior parameterized quantum circuits for quantum image classification`,year:`2022`,citations:6,url:`https://scholar.google.com/citations?view_op=view_citation&hl=en&user=O5pkUdUAAAAJ&citation_for_view=O5pkUdUAAAAJ%3Ad1gkVwhDpl0C`},{title:`QSurfNet: 用於表面缺陷識別的混合量子卷積神經網絡.`,year:`2022`,citations:0,url:`https://scholar.google.com/citations?view_op=view_citation&hl=en&user=O5pkUdUAAAAJ&citation_for_view=O5pkUdUAAAAJ%3AqjMakFHDy7sC`}]};function b(e,n){var r,i;let a=t(e.title),o=e.year||n.yearUnavailable,s=(r=e.citations)==null?0:r,c=(i=e.url)==null?void 0:i.trim(),l=c?`
       <a
         href="${t(c)}"
         target="_blank"
