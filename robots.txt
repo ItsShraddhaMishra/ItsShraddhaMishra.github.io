@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+# The Pages repository's empty README is not part of the site.
+Disallow: /README.md
 
 Sitemap: https://itsshraddhamishra.github.io/sitemap.xml

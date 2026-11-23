@@ -14,9 +14,13 @@
   <meta property="og:description" content="Curriculum vitae of Shraddha Mishra, machine-learning systems researcher: reproducible ML infrastructure, deep-learning side-channel analysis (Academia Sinica), quantum machine learning (Tamkang University), MLOps and risk-aware decision-making.">
   <meta property="og:url" content="https://itsshraddhamishra.github.io/cv.html">
   <meta property="og:image" content="https://itsshraddhamishra.github.io/shraddha-mishra.png">
+  <meta property="og:image:width" content="391">
+  <meta property="og:image:height" content="391">
   <meta property="og:image:alt" content="Portrait of Shraddha Mishra, machine-learning systems researcher">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="https://itsshraddhamishra.github.io/shraddha-mishra.png">
   <meta name="color-scheme" content="light dark">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","url":"https://itsshraddhamishra.github.io/cv.html","mainEntity":{"@type":"Person","@id":"https://itsshraddhamishra.github.io/#shraddha-mishra","name":"Shraddha Mishra","jobTitle":"Machine Learning Systems Researcher","url":"https://itsshraddhamishra.github.io/","image":"https://itsshraddhamishra.github.io/shraddha-mishra.png","identifier":{"@type":"PropertyValue","propertyID":"ORCID","value":"0000-0003-3548-6592"},"sameAs":["https://github.com/ItsShraddhaMishra","https://www.linkedin.com/in/shraddha-mishra-b25728186/","https://scholar.google.com/citations?user=O5pkUdUAAAAJ&hl=en","https://orcid.org/0000-0003-3548-6592"]}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","url":"https://itsshraddhamishra.github.io/cv.html","image":"https://itsshraddhamishra.github.io/shraddha-mishra.png","primaryImageOfPage":{"@type":"ImageObject","url":"https://itsshraddhamishra.github.io/shraddha-mishra.png","width":391,"height":391},"mainEntity":{"@type":"Person","@id":"https://itsshraddhamishra.github.io/#shraddha-mishra","name":"Shraddha Mishra","jobTitle":"Machine Learning Systems Researcher","url":"https://itsshraddhamishra.github.io/","image":"https://itsshraddhamishra.github.io/shraddha-mishra.png","identifier":{"@type":"PropertyValue","propertyID":"ORCID","value":"0000-0003-3548-6592"},"sameAs":["https://github.com/ItsShraddhaMishra","https://www.linkedin.com/in/shraddha-mishra-b25728186/","https://scholar.google.com/citations?user=O5pkUdUAAAAJ&hl=en","https://orcid.org/0000-0003-3548-6592"]}}</script>
   <style>
     body { max-width: 52rem; margin: 0 auto; padding: 2rem 1rem 4rem;
            font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -33,9 +37,6 @@
     .field-arrow, .status-dot { display: none; }
     ol, ul { padding-left: 1.2rem; }
     .interactive { margin: 0.5rem 0 2rem; }
-    .cv-header { display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap; }
-    .cv-photo { width: 140px; height: 140px; border-radius: 50%; object-fit: cover;
-                border: 3px solid #ff3f95; }
     @media (prefers-color-scheme: dark) {
       body { color: #ecfff3; background: #020603; }
       a { color: #28ff78; }
@@ -45,13 +46,9 @@
 </head>
 <body>
   <header class="cv-header">
-    <img class="cv-photo" src="/shraddha-mishra.png" width="391" height="391"
-         alt="Shraddha Mishra, machine-learning systems researcher">
-    <div>
-      <h1>Shraddha Mishra — Curriculum Vitae</h1>
-      <p>Research · System Design · FinTech</p>
-      <p>ORCID: <a href="https://orcid.org/0000-0003-3548-6592">0000-0003-3548-6592</a></p>
-    </div>
+    <h1>Shraddha Mishra — Curriculum Vitae</h1>
+    <p>Research · System Design · FinTech</p>
+    <p>ORCID: <a href="https://orcid.org/0000-0003-3548-6592">0000-0003-3548-6592</a></p>
   </header>
   <p class="interactive">
     Interactive version (eight languages): <a href="https://itsshraddhamishra.github.io/">https://itsshraddhamishra.github.io/</a>
@@ -913,7 +910,11 @@
       <p class="contact-intro">Open to research collaboration, technical discussion, and opportunities involving machine-learning systems, reproducible research, and autonomous decision-making.</p>
 
       <div class="contact-links">
-        <div class="contact-link contact-email" data-open="false">
+        <div
+          class="contact-link contact-email"
+          data-open="false"
+          style="--show-time: 5s"
+        >
           <button
             type="button"
             class="contact-email-toggle"
@@ -932,7 +933,6 @@
               data-done="Copied"
               aria-live="polite"
             >Copy</button>
-            <span class="contact-countdown" aria-hidden="true"></span>
           </div>
         </div>
 
